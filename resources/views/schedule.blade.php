@@ -20,9 +20,9 @@
                 Schedule
             </header>
             <div class="btn-group">
-                <a href="{{ route('order.create') }}" type="button" class="btn btn-sm btn-dark btn-icon" title="New project"><i class="fa fa-plus"></i></a>
+                <a href="{{ route('schedule.generate') }}" type="button" class="btn btn-sm btn-dark btn-icon" title="New project"><i class="fa fa-plus"></i></a>
                 <div class="btn-group hidden-nav-xs">
-                    <a href="{{ route('order.create') }}" type="button" class="btn btn-sm btn-primary dropdown-toggle">
+                    <a href="{{ route('schedule.generate') }}" type="button" class="btn btn-sm btn-primary dropdown-toggle">
                         Generate
                     </a>
                 </div>

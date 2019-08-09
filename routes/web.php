@@ -22,6 +22,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/', 'OrderController@index');
     Route::get('/schedule', 'ScheduleController@index')->name('schedule');
+    Route::get('/generate_schedule', 'ScheduleController@generateSchedule')->name('schedule.generate');
 
     Route::resource('order', 'OrderController');
 
