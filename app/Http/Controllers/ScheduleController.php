@@ -25,35 +25,47 @@ class ScheduleController extends Controller
      */
     public function index()
     {
-        $orders = Order::all();
-        return view('schedule');
+        $today = Carbon::now();
+        $orders = Order::where('delivery_date', '>', $today)->get();
+        $total_data = count($orders) * 7;
+        $schedules = Schedule::orderBy('generate_date', 'DESC')->orderBy('id', 'ASC')->limit($total_data)->get();
+        $data = [
+            'orders' => $orders,
+            'schedules' => $schedules
+        ];
+        return view('schedule')->with('data', $data);
     }
 
     public function generateSchedule()
     {
         $today = Carbon::now();
-        $orders = Order::where('delivery_date', '>', $today)->get();
-        foreach ($orders as $key => $value) {
-            $start = Carbon::createFromFormat("Y-m-d", $value->order_date);
-            $delivery = Carbon::createFromFormat("Y-m-d", $value->delivery_date)->addDays(1);
-            $diff = $delivery->diffInDays($start);
-            $diff_from_today = $delivery->diffInDays(Carbon::now());
-            $item_per_day = $value->quantity/$diff;
-            for ($i=0; $i < 7; $i++) {
-                $per_day = Carbon::now()->addDays($i);
-                $schedule = new Schedule;
-                $schedule->generate_date = $today;
-                $schedule->company_name = $value->name;
-                $schedule->product_id = $value->product_id;
-                $schedule->day_date = $per_day;
-                if ($i >= $diff_from_today) {
-                    $schedule->quantity = 0;
-                } else {
-                    $schedule->quantity = $item_per_day;
+        $schedule = Schedule::where('generate_date', $today->toDateString())->get();
+
+        if (count($schedule) == 0) {
+            $orders = Order::where('delivery_date', '>', $today)->get();
+            foreach ($orders as $key => $value) {
+                $start = Carbon::createFromFormat("Y-m-d", $value->order_date);
+                $delivery = Carbon::createFromFormat("Y-m-d", $value->delivery_date)->addDays(1);
+                $diff = $delivery->diffInDays($start);
+                $diff_from_today = $delivery->diffInDays(Carbon::now());
+                $item_per_day = $value->quantity/$diff;
+                for ($i=0; $i < 7; $i++) {
+                    $per_day = Carbon::now()->addDays($i);
+                    $schedule = new Schedule;
+                    $schedule->generate_date = $today;
+                    $schedule->company_name = $value->name;
+                    $schedule->product_id = $value->product_id;
+                    $schedule->day_date = $per_day;
+                    if ($i >= $diff_from_today) {
+                        $schedule->quantity = 0;
+                    } else {
+                        $schedule->quantity = $item_per_day;
+                    }
+                    $schedule->save();
                 }
-                $schedule->save();
             }
         }
+        
         return redirect()->route('schedule');
     }
 
