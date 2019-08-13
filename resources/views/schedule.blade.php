@@ -27,6 +27,7 @@
                     </a>
                 </div>
             </div>
+            @if (count($data['schedules']) > 0)
             <div class="table-responsive">
                 <table class="table table-striped m-b-none" data-ride="datatables" id="table">
                     <thead>
@@ -97,6 +98,9 @@
                     </tbody>
                 </table>
             </div>
+            @else
+                <div>Tidak ada jadwal</div>
+            @endif
         </section>
     </section>
  </section>
