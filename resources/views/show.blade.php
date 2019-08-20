@@ -10,10 +10,10 @@
     <section class="scrollable wrapper" id="print">
         <div class="row">
             <div class="col-xs-6">
-                <h2 style="margin-top: 0px">ORDER <b>Management</b></h2>
-                <p>1 Infinite Loop <br>
-                    95014 Cuperino, CA<br>
-                    United States
+                <h2 style="margin-top: 0px">KONFIRMASI <b>PEMBAYARAN</b></h2>
+                <p>CV. Sumber Baja Perkasa <br>
+                    Sentono, Ngawonggo, Ceper, Klaten<br>
+                    Indonesia
                 </p>
             </div>
             <div class="col-xs-6 text-right">
@@ -23,7 +23,7 @@
         <div class="well m-t" style="margin-bottom: 50px">
             <div class="row">
                 <div class="col-xs-6">
-                    <strong>TO:</strong>
+                    <strong>KEPADA:</strong>
                     <h4>{{ $order->name }}</h4>
                     <p>
                         {{ $order->address }}
@@ -32,7 +32,7 @@
                 <div class="col-xs-6 text-right">
                     <p class="h4">#{{ $order->id }}</p>
                     <h5>{{ $order->delivery_date }}</h5>
-                    <p class="m-t m-b">Order date: <strong>26th Mar 2013</strong><br>
+                    <p class="m-t m-b">Order date: <strong>27 Agustus 2019</strong><br>
                         Order ID: <strong>#9399034</strong>
                     </p>
                 </div>
@@ -43,7 +43,7 @@
             <thead>
             <tr>
                 <th width="60">QTY</th>
-                <th>DESCRIPTION</th>
+                <th>DEATIL TRANSAKSI</th>
                 <th width="120">TOTAL</th>
             </tr>
             </thead>
@@ -51,27 +51,27 @@
             <tr>
                 <td>1</td>
                 <td>{{ $order->product_id }}</td>
-                <td>Tk {{ $order->amount }}</td>
+                <td> {{ $order->amount }}</td>
             </tr>
             <tr>
                 <td colspan="2" class="text-right"><strong>Subtotal</strong></td>
-                <td>Tk {{ $order->amount }}</td>
+                <td> {{ $order->amount }}</td>
             </tr>
             <tr>
-                <td colspan="2" class="text-right no-border"><strong>VAT Included in Total</strong></td>
-                <td>$0.00</td>
+                <td colspan="2" class="text-right no-border"><strong>Ppn 2%</strong></td>
+                <td>Rp. 25.000</td>
             </tr>
             <tr>
                 <td colspan="2" class="text-right no-border"><strong>Total</strong></td>
-                <td><strong>TK {{ $order->amount }}</strong></td>
+                <td><strong> {{ $order->amount }}</strong></td>
             </tr>
             </tbody>
         </table>
         <div class="row">
             <div class="col-xs-8">
-                <p><i> Buy goods  cdsncl dskjckjds sdc dsjbc dsv sdjuguas csaasooief aihashasfnsakoasss sa fosafosa yfoasyfoaisfoa asfas f sa foyaosyosayf as f asyofyoasyfas as</i></p>
+                <p><i>Terima kasih telah melakukan pembayaran. </i></p>
 
-                <p>Recvied By: __________________ </p>
+                <p>Diterima Oleh : __________________ </p>
             </div>
         </div>
     </section>
