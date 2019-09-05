@@ -26,6 +26,11 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::resource('order', 'OrderController');
 
+    Route::get('/waktu-baku', 'WaktuBakuController@index')->name('waktu-baku');
+    Route::get('/waktu/create', 'WaktuBakuController@create')->name('waktu.create');
+    Route::post('/waktu/store', 'WaktuBakuController@store')->name('waktu.store');
+
+
     Route::get('logout', function (){
         Auth::logout();
         return redirect('/');

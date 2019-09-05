@@ -103,10 +103,56 @@
                                                     <span>All Orders</span>
                                                 </a>
                                             </li>
+                                            {{-- <li >
+                                                <a href="{{ route('schedule') }}" >
+                                                    <i class="fa fa-angle-right"></i>
+                                                    <span>Schedule</span>
+                                                </a>
+                                            </li> --}}
+                                        </ul>
+                                    </li>
+                                    {{-- <li >
+                                        <a href=""  >
+                                            <i class="fa fa-calendar">
+                                                <b class="bg-warning"></b>
+                                            </i>
+                                            <span class="pull-right">
+                                                <i class="fa fa-angle-down text"></i>
+                                              <i class="fa fa-angle-up text-active"></i>
+                                            </span>
+                                            <span>Schedule</span>
+                                        </a>
+                                        <ul class="nav lt">
                                             <li >
                                                 <a href="{{ route('schedule') }}" >
                                                     <i class="fa fa-angle-right"></i>
                                                     <span>Schedule</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li> --}}
+                                    <li >
+                                        <a href=""  >
+                                            <i class="fa fa-calendar">
+                                                <b class="bg-warning"></b>
+                                            </i>
+                                            <span class="pull-right">
+                                                <i class="fa fa-angle-down text"></i>
+                                              <i class="fa fa-angle-up text-active"></i>
+                                            </span>
+                                            <span>Scheduling</span>
+                                        </a>
+                                        <ul class="nav lt">
+                                            <li >
+                                                <a href="{{ route('waktu.create') }}" >
+                                                    <i class="fa fa-angle-right"></i>
+                                                    <span>Add Scheduling</span>
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <a href="{{ route('waktu-baku') }}" >
+                                                    <i class="fa fa-angle-right"></i>
+                                                    <span>List Schedule</span>
                                                 </a>
                                             </li>
                                         </ul>
