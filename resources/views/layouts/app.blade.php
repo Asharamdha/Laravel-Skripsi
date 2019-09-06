@@ -146,13 +146,13 @@
                                             <li >
                                                 <a href="{{ route('waktu.create') }}" >
                                                     <i class="fa fa-angle-right"></i>
-                                                    <span>Add Scheduling</span>
+                                                    <span>Add Waktu Baku</span>
                                                 </a>
                                             </li>
                                             <li >
                                                 <a href="{{ route('waktu-baku') }}" >
                                                     <i class="fa fa-angle-right"></i>
-                                                    <span>List Schedule</span>
+                                                    <span>Waktu Proses</span>
                                                 </a>
                                             </li>
                                             <li >

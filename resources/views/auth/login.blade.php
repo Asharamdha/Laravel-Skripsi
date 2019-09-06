@@ -47,7 +47,7 @@
             {!! Form::submit('Sign in',[ 'class'=>"btn btn-primary"]) !!}
             {!! Form::close() !!}
             <hr>
-            <center><a class="btn btn-success btn-lg" href="{{ url('/register') }}">Register</a></center><br>
+            {{-- <center><a class="btn btn-success btn-lg" href="{{ url('/register') }}">Register</a></center><br> --}}
         </section>
     </div>
 </section>

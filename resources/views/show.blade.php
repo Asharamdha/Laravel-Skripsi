@@ -54,14 +54,6 @@
                 <td> {{ $order->amount }}</td>
             </tr>
             <tr>
-                <td colspan="2" class="text-right"><strong>Subtotal</strong></td>
-                <td> {{ $order->amount }}</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="text-right no-border"><strong>Ppn 2%</strong></td>
-                <td>Rp. 25.000</td>
-            </tr>
-            <tr>
                 <td colspan="2" class="text-right no-border"><strong>Total</strong></td>
                 <td><strong> {{ $order->amount }}</strong></td>
             </tr>
