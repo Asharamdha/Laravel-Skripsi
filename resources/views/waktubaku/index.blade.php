@@ -28,11 +28,20 @@
                 <table class="table table-striped m-b-none" data-ride="datatables" id="table">
                     <thead>
                         <tr>
-                            <th width="">M1</th>
-                            <th width="">M2</th>
-                            <th width="">M3</th>
-                            <th width="">M4</th>
-                            <th width="">M5</th>
+                            <th width="">Pelanggan</th>
+                            <th width="">Job</th>
+                            <th width="">Kuantitas</th>
+                            <th width="">M1 Baku</th>
+                            <th width="">M2 Baku</th>
+                            <th width="">M3 Baku</th>
+                            <th width="">M4 Baku</th>
+                            <th width="">M5 Baku</th>
+
+                            <th width="">M1 Waktu Proses</th>
+                            <th width="">M2 Waktu Proses</th>
+                            <th width="">M3 Waktu Proses</th>
+                            <th width="">M4 Waktu Proses</th>
+                            <th width="">M5 Waktu Proses</th>
                             <th width="150px">Buttons</th>
                         </tr>
                     </thead>
@@ -40,12 +49,27 @@
                     <tbody>
                         @foreach($data as $data )
                             <tr>
+                                <td>{{ $data->pelanggan }}</td>
+                                <td>{{$loop->iteration}}</td>
+                                <td>{{ $data->kuantitas }}</td>
                                 <td>{{ $data->m1 }}</td>
                                 <td>{{ $data->m2 }}</td>
                                 <td>{{ $data->m3 }}</td>
                                 <td>{{ $data->m4 }}</td>
                                 <td>{{ $data->m5}}</td>
-                                <td></td>
+
+                                <td>{{ $data->m1_waktu_proses}}</td>
+                                <td>{{ $data->m2_waktu_proses}}</td>
+                                <td>{{ $data->m3_waktu_proses}}</td>
+                                <td>{{ $data->m4_waktu_proses}}</td>
+                                <td>{{ $data->m5_waktu_proses}}</td>
+
+                                <td>
+                                        {{-- <a class="btn btn-xs btn-danger" href="{{ route('waktubaku.destroy', [$data->id]) }}" data-toggle="tooltip" data-placement="top" data-title="Delete" onclick="return confirm('Anda yakin ingin menghapus butir ini?')"><i class="fa fa-trash"></i></a> --}}
+                                        <a href="{{ route('waktubaku.destroy',$data->id) }}" class="btn btn-sm btn-icon btn-danger"><i class="fa fa-trash-o"></i></a>
+        
+        
+                                </td>
 
 
                                 {{-- <td>

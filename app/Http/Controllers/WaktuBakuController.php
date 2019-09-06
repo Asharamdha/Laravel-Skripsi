@@ -51,11 +51,18 @@ class WaktuBakuController extends Controller
         $data->bulan = $bulan;
         $data->tahun = $tahun;
         $data->tanggal = $tanggal;
+        $data->pelanggan = $request->pelanggan;
+        $data->kuantitas = $request->kuantitas;
         $data->m1 = $request->m1;
         $data->m2 = $request->m2;
         $data->m3 = $request->m3;
         $data->m4 = $request->m4;
         $data->m5 = $request->m5;
+        $data->m1_waktu_proses = ($request->kuantitas*30)/$request->m1;
+        $data->m2_waktu_proses = ($request->kuantitas*30)/$request->m2;
+        $data->m3_waktu_proses = ($request->kuantitas*30)/$request->m3;
+        $data->m4_waktu_proses = ($request->kuantitas*30)/$request->m4;
+        $data->m5_waktu_proses = ($request->kuantitas*30)/$request->m5;        
  
         $data->save();
 
@@ -67,4 +74,26 @@ class WaktuBakuController extends Controller
         $order = Order::find($id);
         return view('edit')->with('order', $order);
     }
+
+    public function idle()
+    {
+        
+        $bulan = Carbon::now()->month;
+
+        $tahun = Carbon::now()->year;
+
+        $data = WaktuBaku::where('bulan', $bulan)->where('tahun', $tahun)->get();
+        return view('waktubaku/idle')->with( 'data', $data );
+    }
+
+    public function destroy($id)
+    {
+        $data = WaktuBaku::findOrFail($id);
+
+        $data->delete();
+
+        return redirect('waktu-baku')->with('update_message', 'Hapus Berhasil');
+    
+    }
+
 }

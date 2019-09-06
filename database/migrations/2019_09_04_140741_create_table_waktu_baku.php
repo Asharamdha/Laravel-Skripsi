@@ -23,6 +23,13 @@ class CreateTableWaktuBaku extends Migration
             $table->float('m3');
             $table->float('m4');
             $table->float('m5');
+            $table->float('m1_waktu_proses');
+            $table->float('m2_waktu_proses');
+            $table->float('m3_waktu_proses');
+            $table->float('m4_waktu_proses');
+            $table->float('m5_waktu_proses');
+            $table->string('pelanggan');
+            $table->integer('kuantitas');
             $table->nullableTimestamps();
         });
     }

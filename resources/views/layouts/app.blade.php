@@ -155,6 +155,12 @@
                                                     <span>List Schedule</span>
                                                 </a>
                                             </li>
+                                            <li >
+                                                <a href="{{ route('idle') }}" >
+                                                    <i class="fa fa-angle-right"></i>
+                                                    <span>Idle Time</span>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li >
