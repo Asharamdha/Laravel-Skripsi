@@ -158,7 +158,14 @@
                                             <li >
                                                 <a href="{{ route('idle') }}" >
                                                     <i class="fa fa-angle-right"></i>
-                                                    <span>Idle Time</span>
+                                                    <span>FCFS</span>
+                                                </a>
+                                            </li>
+
+                                            <li >
+                                                <a href="{{ route('waktu.output') }}" >
+                                                    <i class="fa fa-angle-right"></i>
+                                                    <span>Waktu Output</span>
                                                 </a>
                                             </li>
                                         </ul>

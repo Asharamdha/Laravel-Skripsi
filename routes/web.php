@@ -31,6 +31,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/waktu/store', 'WaktuBakuController@store')->name('waktu.store');
     Route::get('/idle', 'WaktuBakuController@idle')->name('idle');
     Route::get('/waktu-baku/destroy/{id}', 'WaktuBakuController@destroy')->name('waktubaku.destroy');
+    Route::get('/waktu/output', 'WaktuBakuController@output')->name('waktu.output');
 
 
     Route::get('logout', function (){

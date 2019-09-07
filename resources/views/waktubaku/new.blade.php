@@ -10,14 +10,14 @@
     <section class="scrollable padder">
         <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
             <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-            <li class="active">Workset</li>
+            <li class="active">Scheduling</li>
         </ul>
         <div class="m-b-md">
             <h3 class="m-b-none">ADD Waktu Baku</h3>
         </div>
         <section class="panel panel-default">
             <header class="panel-heading">
-                Add Order
+                Input Waktu Baku
                 <i class="fa fa-info-sign text-muted" data-toggle="tooltip" data-placement="bottom" data-title="ajax to load the data."></i>
             </header>
 
