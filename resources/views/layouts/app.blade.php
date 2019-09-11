@@ -168,6 +168,13 @@
                                                     <span>Waktu Output</span>
                                                 </a>
                                             </li>
+
+                                            <li >
+                                                <a href="{{ route('waktu.delivery') }}" >
+                                                    <i class="fa fa-angle-right"></i>
+                                                    <span>Delivery Time</span>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li >

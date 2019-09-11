@@ -33,6 +33,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/waktu-baku/destroy/{id}', 'WaktuBakuController@destroy')->name('waktubaku.destroy');
     Route::get('/waktu/output', 'WaktuBakuController@output')->name('waktu.output');
 
+    Route::get('/waktu/delivery', 'WaktuBakuController@delivery')->name('waktu.delivery');
+    Route::post('/waktu/delivery/search', 'WaktuBakuController@search')->name('waktu.delivery.search');
+
+
+
 
     Route::get('logout', function (){
         Auth::logout();
