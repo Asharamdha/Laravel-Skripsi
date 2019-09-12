@@ -50,11 +50,12 @@
                     <thead>
                         <tr>
                             <th width="" rowspan="2">Pelanggan</th>
-                            <th width="" colspan="2">M1</th>
-                            <th width="" colspan="2">M2</th>
-                            <th width="" colspan="2">M3</th>
-                            <th width="" colspan="2">M4</th>
-                            <th width="" colspan="2">M5</th>
+                            <th width="" rowspan="2">Job</th>
+                            <th width="" colspan="2">Cetak Resin</th>
+                            <th width="" colspan="2">Press</th>
+                            <th width="" colspan="2">Peleburan</th>
+                            <th width="" colspan="2">Cor</th>
+                            <th width="" colspan="2">Pembongkahan</th>
                             <th width="" rowspan="2">Delivery</th>
                         </tr>
                         <tr>
@@ -76,6 +77,7 @@
                         <tr>
 
                                 <td>{{$item['pelanggan']}}</td>
+                                <td>{{$loop->iteration}}</td>
                                 <td>{{date("l,d-m-Y", strtotime($item['m1_masuk']))}}</td>
                                 <td>{{date("l,d-m-Y", strtotime($item['m1_keluar']))}}</td>
                                 <td>{{date("l,d-m-Y", strtotime($item['m2_masuk']))}}</td>

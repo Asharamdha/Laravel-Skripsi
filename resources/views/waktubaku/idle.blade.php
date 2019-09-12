@@ -13,7 +13,7 @@
             <li class="active">Scheduling</li>
         </ul>
         <div class="m-b-md">
-            <h3 class="m-b-none">Idle Time</h3>
+            <h3 class="m-b-none">First Come First Serve</h3>
         </div>
         <section class="panel panel-default">
             <header class="panel-heading">

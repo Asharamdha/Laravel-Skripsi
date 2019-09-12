@@ -31,17 +31,17 @@
                             <th width="">Pelanggan</th>
                             <th width="">Job</th>
                             <th width="">Kuantitas</th>
-                            <th width="">M1 Baku</th>
-                            <th width="">M2 Baku</th>
-                            <th width="">M3 Baku</th>
-                            <th width="">M4 Baku</th>
-                            <th width="">M5 Baku</th>
+                            <th width="">Lama Waktu Cetak Resin (s)</th>
+                            <th width="">Lama Waktu Press (s)</th>
+                            <th width="">Lama Waktu Peleburan (s)</th>
+                            <th width="">Lama Waktu Cor (s)</th>
+                            <th width="">Lama Waktu Pembongkahan (s)</th>
 
-                            <th width="">M1 Waktu Proses</th>
-                            <th width="">M2 Waktu Proses</th>
-                            <th width="">M3 Waktu Proses</th>
-                            <th width="">M4 Waktu Proses</th>
-                            <th width="">M5 Waktu Proses</th>
+                            <th width="">Waktu Proses Cetak Resin (s)</th>
+                            <th width="">Waktu Proses Press (s)</th>
+                            <th width="">Waktu Proses Peleburan (s)</th>
+                            <th width="">Waktu Proses Cor (s)</th>
+                            <th width="">Waktu Proses Pembongkahan (s)</th>
                             <th width="150px">Buttons</th>
                         </tr>
                     </thead>

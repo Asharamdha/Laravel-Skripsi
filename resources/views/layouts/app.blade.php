@@ -2,7 +2,7 @@
 <html lang="en" class="app">
 <head>
     <meta charset="utf-8" />
-    <title>@yield('title') | LaravelOMS</title>
+    <title>@yield('title') | LaravelScheduling</title>
     <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css" />
@@ -26,13 +26,13 @@
             <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#" class="navbar-brand" style="color: #fb6b5b; font-weight: 200" data-toggle="fullscreen">ORDER_MANAGEMENT_SYSTEM</a>
+            <a href="#" class="navbar-brand" style="color: #fb6b5b; font-weight: 200" data-toggle="fullscreen">SCHEDULING_MANAGEMENT_SYSTEM</a>
             <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".nav-user">
                 <i class="fa fa-cog"></i>
             </a>
         </div>
         <ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user">
-            <li class="hidden-xs"><a href="#" class="dropdown-toggle"> <b>LaravelOMS Application</b></a></li>
+            <li class="hidden-xs"><a href="#" class="dropdown-toggle"> <b>Laravel Scheduling Application</b></a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle dker" data-toggle="dropdown">
                     <b class="caret"></b>
@@ -146,7 +146,7 @@
                                             <li >
                                                 <a href="{{ route('waktu.create') }}" >
                                                     <i class="fa fa-angle-right"></i>
-                                                    <span>Add Waktu Baku</span>
+                                                    <span>Waktu Baku</span>
                                                 </a>
                                             </li>
                                             <li >
@@ -163,10 +163,10 @@
                                             </li>
 
                                             <li >
-                                                <a href="{{ route('waktu.output') }}" >
+                                             {{--   <a href="{{ route('waktu.output') }}" >
                                                     <i class="fa fa-angle-right"></i>
                                                     <span>Waktu Output</span>
-                                                </a>
+                                                </a>--}}
                                             </li>
 
                                             <li >

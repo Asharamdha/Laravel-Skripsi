@@ -13,7 +13,7 @@
             <li class="active">Scheduling</li>
         </ul>
         <div class="m-b-md">
-            <h3 class="m-b-none">ADD Waktu Baku</h3>
+            <h3 class="m-b-none">Waktu Baku</h3>
         </div>
         <section class="panel panel-default">
             <header class="panel-heading">
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m1">M1
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m1">Lama Waktu Cetak Resin (s)
                         <span class="required">*</span>
                     </label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m2">M2
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m2">Lama Waktu Press (s)
                         <span class="required">*</span>
                     </label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m3">M3
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m3">Lama Waktu Peleburan (s)
                         <span class="required">*</span>
                     </label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m4">M4
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m4">Lama Waktu Cor (s)
                         <span class="required">*</span>
                     </label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
@@ -81,7 +81,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m5">M5
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m5">Lama Waktu Pembongkahan (s)
                         <span class="required">*</span>
                     </label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
