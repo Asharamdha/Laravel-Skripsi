@@ -146,7 +146,7 @@
                                             <li >
                                                 <a href="{{ route('waktu.create') }}" >
                                                     <i class="fa fa-angle-right"></i>
-                                                    <span>Waktu Baku</span>
+                                                    <span>Waktu Standar</span>
                                                 </a>
                                             </li>
                                             <li >

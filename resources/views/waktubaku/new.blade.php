@@ -13,11 +13,11 @@
             <li class="active">Scheduling</li>
         </ul>
         <div class="m-b-md">
-            <h3 class="m-b-none">Waktu Baku</h3>
+            <h3 class="m-b-none">Waktu Standar</h3>
         </div>
         <section class="panel panel-default">
             <header class="panel-heading">
-                Input Waktu Baku
+                Input Waktu Standar
                 <i class="fa fa-info-sign text-muted" data-toggle="tooltip" data-placement="bottom" data-title="ajax to load the data."></i>
             </header>
 
